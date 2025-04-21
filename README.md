@@ -6,8 +6,6 @@ Mohammad Mahdi Abedi, David Pardo, Tariq Alkhalifah
 
 ---
 
-## 🧠 Overview
-
 This work proposes a hybrid training strategy that embeds a least-squares optimization step within the training loop of physics-informed neural networks (PINNs) to solve the 2D acoustic Helmholtz equation more efficiently and in fewer epochs.
 
 Key Features:
