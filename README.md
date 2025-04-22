@@ -10,8 +10,11 @@ This work proposes a hybrid training strategy that embeds a least-squares optimi
 
 Key Features:
 - Least-Squares-enhanced training for PINNs
+- Forward or Backward differentiation strategy
+- Inclusion of perfectly matched layer (PML)
+- Inclusion of positional encoder layer
 - Varying collocation point strategy
-- Comparison against traditional PINNs with validation data
+- Comparison against traditional PINNs and finite-difference
 - Application to simple and complex velocity models
 
 ---
