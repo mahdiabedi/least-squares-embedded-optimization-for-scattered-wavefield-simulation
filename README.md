@@ -1,7 +1,7 @@
 # least-squares-embedded-optimization-for-scattered-wavefield-simulation
 This repository contains the official implementation of our paper:
 
-**Least-Squares-Embedded Optimization for Accelerated Convergence of PINNs in Acoustic Wavefield Simulations**  
+[Least-Squares-Embedded Optimization for Accelerated Convergence of PINNs in Acoustic Wavefield Simulations](https://arxiv.org/abs/2504.16553)  
 Mohammad Mahdi Abedi, David Pardo, Tariq Alkhalifah
 
 ---
