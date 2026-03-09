@@ -4,10 +4,7 @@ This repository contains the official implementation of the paper "Least-Squares
 M M Abedi
 
 ---
-<img width="300" height="200" alt="Marmousi_velocity" src="https://github.com/user-attachments/assets/2510e113-837d-4a57-aadb-433113125f31" >
-<img width="300" height="200" alt="Marmousi30Hz_prediction_LSPINN" src="https://github.com/user-attachments/assets/2cf37ee8-e350-440f-b675-a5e5a6e128b9" >
-<img width="300" height="200" alt="Marmousi_30Hz_errors" src="https://github.com/user-attachments/assets/1f7661cc-7e3b-4844-9033-4bf734b43344" >
-
+<img width="900" height="200" alt="merged_3panel_figure" src="https://github.com/user-attachments/assets/e59d3cc9-8662-4ded-84e2-978a9b26c782" />
 
 *(Caption: **Left:** The  Marmousi velocity model. **Center:** The 30Hz scattered acoustic wavefield predicted by our proposed LS-GD method. **Right:** Evolution of errors during training, highlighting the accelerated convergence and stability of LS-GD compared to standard Gradient Descent.)*
 
