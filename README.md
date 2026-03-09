@@ -28,9 +28,9 @@ Key Features:
 ## Repository Structure
 
 **Source Code:**
-- inference_LSGD_PINN.py: The inference script for loading pretrained models and plotting the predicted wavefields on validations points.
-- LS_embeded_PINN.py: The primary training script. Allows users to train models using standard Gradient Descent (GD) or the proposed Least-Squares Gradient Descent (LS-GD) for the Simple or Marmousi velocity models.
-- My_utilities_LS.py: The  backend containing custom Keras layers, loss function definitions, interpolation utilities, and wavefield plotting routines.
+- `inference_LSGD_PINN.py`: The inference script for loading pretrained models and plotting the predicted wavefields on validations points.
+- `LS_embeded_PINN.py`: The primary training script. Allows users to train models using standard Gradient Descent (GD) or the proposed Least-Squares Gradient Descent (LS-GD) for the Simple or Marmousi velocity models.
+- `My_utilities_LS.py`: The  backend containing custom Keras layers, loss function definitions, interpolation utilities, and wavefield plotting routines.
 
 **Data & Pretrained Models:**
 - pretrained_models/: Directory containing saved keras models trained with various configurations (tests in the paper).
@@ -39,23 +39,24 @@ Key Features:
 - xz_Simple_val.npz and xz_Marmousi_val.npz: Validation coordinate grids and velocity profiles for the respective geologic models (used in the inference code).
 
 ## Usage Guide
-1. Training a Model (LS_embeded_PINN.py)
+1. Training a Model (`LS_embeded_PINN.py`)
 To train a new model, open LS_embeded_PINN.py and configure the Simulation Settings block at the top of the script. Key parameters include:
-- velocity_model: Set to 'simple' or 'marmousi'.
-- use_LS: Set to True to enable the proposed Least-Squares embedded solver, or False for conventional Gradient Descent.
-- use_PML: Set to True to apply Perfectly Matched Layers at the domain boundaries.
-- frequency: Target wavefield frequency.
+    - velocity_model: Set to 'simple' or 'marmousi'.
+    - use_LS: Set to True to enable the proposed Least-Squares embedded solver, or False for conventional Gradient Descent.
+    - use_PML: Set to True to apply Perfectly Matched Layers at the domain boundaries.
+    - frequency: Target wavefield frequency.
 
-2. Running Inference & Plotting (inference_LSGD_PINN.py)
+2. Running Inference & Plotting (`inference_LSGD_PINN.py`)
 To reproduce the plots from the paper using our provided models, use the inference script. 
 The User-defined parameters in inference_LSGD_PINN.py are:
-- velocity_model = 'Simple'  # 'Simple' or 'Marmousi'
-- method = 'LSGD'            # 'GD' or 'LSGD'
-- K_max_encoder = 3          # Positional encoder parameter
+   - velocity_model = 'Simple'  # 'Simple' or 'Marmousi'
+   - method = 'LSGD'            # 'GD' or 'LSGD'
+   - K_max_encoder = 3          # Positional encoder parameter
 
 ## Installation & Requirements
 The code is written in Python and utilizes **TensorFlow** for automatic differentiation and neural network optimization.
 
 **Install dependencies:**
+```bash
 pip install tensorflow numpy scipy matplotlib keras
 
