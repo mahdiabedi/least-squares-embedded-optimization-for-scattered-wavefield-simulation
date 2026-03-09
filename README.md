@@ -46,7 +46,7 @@ To train a new model, open LS_embeded_PINN.py and configure the Simulation Setti
 - use_PML: Set to True to apply Perfectly Matched Layers at the domain boundaries.
 - frequency: Target wavefield frequency.
 
-3. Running Inference & Plotting (inference_LSGD_PINN.py)
+2. Running Inference & Plotting (inference_LSGD_PINN.py)
 To reproduce the plots from the paper using our provided models, use the inference script. 
 The User-defined parameters in inference_LSGD_PINN.py are:
 - velocity_model = 'Simple'  # 'Simple' or 'Marmousi'
