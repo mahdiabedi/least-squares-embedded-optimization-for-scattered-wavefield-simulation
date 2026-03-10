@@ -10,9 +10,9 @@ Journal: Computers and Geosciences
 
 Description:
     This script performs inference using pre-trained PINN models (GD or LS-GD).
-    It supports multi-scale positional encoding with flexible frequency bands (K_max).
+    It supports the test on positional encoding with flexible frequency bands (K_max).
     
- M. Abedi 
+ M.M. Abedi 
 """
 
 import tensorflow as tf
@@ -64,7 +64,6 @@ plt.rcParams.update({
     "axes.labelsize": 16,          # Label font size
     "xtick.labelsize": 14,         # x-tick label font size
     "ytick.labelsize": 14,         # y-tick label font size
-    "legend.fontsize": 14,         # Legend font size
     "text.latex.preamble": r"\usepackage{amsmath}"  # Use amsmath for better LaTeX rendering
 })
 
@@ -113,8 +112,6 @@ def get_custom_embedder(max_freq):
         def get_config(self):
             config = super(EmbedderLayer, self).get_config()
             config.update({"domain_bounds": self.domain_bounds})
-            # We intentionally do not save max_freq here so it remains 
-            # backward-compatible with your already-saved models.
             return config
             
     return EmbedderLayer
