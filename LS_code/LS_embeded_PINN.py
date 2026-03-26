@@ -109,7 +109,10 @@ if use_PML:
 initial_reg = 0.1          # Initial LS regularization strength
 reg_decay_rate = 0.2       # Rate of decay for regularization
 final_reg = 1e-4           # Final LS regularization value
-
+if GD_loss=="Backward":
+    tf.config.experimental.enable_tensor_float_32_execution(False)
+    #To avoid the precision collapses
+    
 # Total number of collocation points per epoch
 npts = npts_x * npts_z
 
